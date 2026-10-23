@@ -1,0 +1,31 @@
+* { box-sizing: border-box; }
+:root { color-scheme: light; font-family: Arial, Helvetica, sans-serif; color: #111; background: #fff; }
+body { margin: 0; line-height: 1.6; }
+a { color: inherit; }
+.site-header { display: flex; justify-content: space-between; align-items: center; gap: 1rem; padding: 1.2rem 7%; border-bottom: 1px solid #111; }
+.brand { font-size: 1.35rem; font-weight: 800; text-decoration: none; letter-spacing: -.04em; }
+nav { display: flex; flex-wrap: wrap; gap: 1.25rem; }
+nav a { text-decoration: none; font-size: .95rem; }
+.hero { padding: 6rem 7% 5rem; border-bottom: 1px solid #111; }
+.hero h1 { font-size: clamp(2.8rem, 7vw, 5.7rem); line-height: .98; letter-spacing: -.06em; margin: .5rem 0 1rem; max-width: 760px; }
+.hero p:not(.eyebrow) { max-width: 520px; }
+.eyebrow { font-size: .75rem; font-weight: 800; letter-spacing: .16em; }
+.button { display: inline-block; margin-top: 1rem; border: 1px solid #111; background: #111; color: #fff; padding: .75rem 1.2rem; font: inherit; text-decoration: none; cursor: pointer; }
+.button:hover { background: #fff; color: #111; }
+.button-outline { background: #fff; color: #111; }
+.intro, .menu-section, .cart-section { padding: 3.5rem 7%; border-bottom: 1px solid #111; }
+h2 { font-size: clamp(1.7rem, 4vw, 2.5rem); letter-spacing: -.04em; line-height: 1.1; }
+.intro p { max-width: 650px; }
+.section-heading { display: flex; justify-content: space-between; align-items: end; gap: 1rem; flex-wrap: wrap; }
+.search-label { display: grid; gap: .3rem; font-size: .85rem; font-weight: 700; }
+input { border: 1px solid #111; padding: .7rem; min-width: 230px; font: inherit; }
+.menu-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; margin-top: 1.5rem; }
+.menu-card { border: 1px solid #111; padding: 1.2rem; display: flex; flex-direction: column; align-items: flex-start; }
+.menu-card h3 { margin: .2rem 0; }
+.menu-card p { margin: .4rem 0 1rem; }
+.menu-card .price { font-weight: 800; margin-top: auto; }
+.menu-card button { margin-top: .7rem; }
+.total { font-size: 1.15rem; }
+.notice { font-size: .85rem; }
+footer { padding: 1.5rem 7%; font-size: .85rem; }
+@media (max-width: 620px) { .site-header { align-items: flex-start; flex-direction: column; } nav { gap: .7rem; } .hero { padding-top: 4rem; } }
